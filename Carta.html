@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carta de amor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Carta de amor de mi para tu</h1>
+        <img src="tu_foto.jpg" alt="Tu foto" class="photo">
+        <p>
+            Desde el momento en que te conocí, mi vida cambió de maneras que nunca podría haber imaginado.
+            Cada día que pasa y que mi primer pensamiento seas tú es un regalo, y en este día tan especial, 
+            quiero recordarte lo increíble que eres y lo agradecido que estoy por tenerte en mi vida.
+            Tu sonrisa ilumina mis días y tu risa es la melodía más hermosa que he escuchado. Tus ojos, llenos de amor y
+            ternura, me hacen sentir el hombre más afortunado del mundo. Eres mi compañera, mi confidente y mi mejor amiga.
+            En cada desafío, en cada risa, en cada lágrima, has estado a mi lado, apoyándome y amándome sin condiciones.
+            Recuerdo con cariño cada momento que hemos compartido, desde nuestras primeras citas hasta las noches en las que
+            simplemente nos quedamos hablando hasta el amanecer. Has llenado mi vida de felicidad y amor, y en este día,
+            quiero celebrarte a ti, la persona increíble que eres.
+            Hoy es tu cumpleaños, y más que nunca, quiero hacerte sentir especial y amada. Quiero que sepas que siempre
+            estaré aquí para ti, apoyándote en cada paso del camino, celebrando tus logros y consolándote en los momentos
+            difíciles.
+            Gracias por ser tú, por ser mi inspiración y mi motivo para seguir adelante cada día. Prometo seguir amándote,
+            respetándote y cuidándote, hoy y siempre. Eres mi todo, y no puedo esperar a seguir construyendo recuerdos
+            maravillosos contigo.
+            Feliz cumpleaños, mi amor. Que este nuevo año de vida te traiga tantas alegrías como las que tú me has dado.
+            Con todo mi amor, Cristopher.
+        </p>
+        <button onclick="playMusic()">Nuestra canción</button>
+    </div>
+    <audio id="background-music" src="Falling in love with you.mp3" loop></audio>
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+
+</html>

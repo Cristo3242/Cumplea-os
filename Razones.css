@@ -1,0 +1,70 @@
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilos del encabezado principal */
+h2 {
+    color: #b56576;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-family: 'Brush Script MT', cursive;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px;
+}
+
+/* Estilos de los cuadros */
+.reason-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #b56576;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.reason-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.reason-card p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.reason-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive: para pantallas pequeñas */
+@media (max-width: 600px) {
+    .reason-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
